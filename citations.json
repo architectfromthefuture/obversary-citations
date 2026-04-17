@@ -1,0 +1,137 @@
+{
+  "version": 1,
+  "updated": "2026-04-17",
+  "source_repo": "https://github.com/architectfromthefuture/obversary-citations",
+  "categories": [
+    {
+      "id": "safety-governance",
+      "label": "Safety & frontier governance",
+      "entries": [
+        {
+          "title": "Preparedness Framework v2",
+          "authors": "OpenAI",
+          "year": 2025,
+          "type": "framework",
+          "url": "https://cdn.openai.com/pdf/18a02b5d-6b67-4cec-ab64-68cdfbddebcd/preparedness-framework-v2.pdf",
+          "cited_in": [
+            "The Same Problem at Every Scale",
+            "When the Weak Supervise the Strong",
+            "Privacy First, Threat-Aware, Still Just Math (site)"
+          ],
+          "notes": "Capability thresholds, research categories (sandbagging, undermining safeguards, long-range autonomy, autonomous replication), multi-signal safeguards.",
+          "iteration": "Primary governance bridge for Obversary Preparedness ↔ W2S thesis."
+        },
+        {
+          "title": "Artificial Intelligence Risk Management Framework (AI RMF 1.0)",
+          "authors": "NIST",
+          "year": 2023,
+          "type": "standard",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "cited_in": ["Privacy First, Threat-Aware, Still Just Math (site)"],
+          "notes": "Trustworthiness, governance, and risk framing for AI systems — cited alongside Preparedness and adversarial-ML resources."
+        }
+      ]
+    },
+    {
+      "id": "weak-to-strong",
+      "label": "Weak-to-strong & empirical alignment",
+      "entries": [
+        {
+          "title": "Automated Weak-to-Strong Researcher",
+          "authors": "Wen, Qiu, Benton, Kirchner, Leike et al. (Anthropic)",
+          "year": 2026,
+          "type": "paper",
+          "url": "https://alignment.anthropic.com/2026/automated-w2s-researcher/",
+          "cited_in": [
+            "The Same Problem at Every Scale",
+            "When the Weak Supervise the Strong",
+            "W2S fork (automated-w2s-research)"
+          ],
+          "notes": "Autonomous W2S agents; entropy collapse, reward hacking, local memory vs remote search — maps to Obversary signal-gated architecture.",
+          "iteration": "Fork with obversary-implementation/ signal detector, behavioral monitor, multi-critic evaluator, memory substrate."
+        },
+        {
+          "title": "Weak-to-Strong Generalization: Eliciting Strong Capabilities With Weak Supervision",
+          "authors": "Burns, Ye, Klein, Steinhardt",
+          "year": 2023,
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2312.09390",
+          "cited_in": ["Reading tab (Resources)", "W2S background"],
+          "notes": "PGR metric; foundational W2S problem statement."
+        },
+        {
+          "title": "Discovering Latent Knowledge in Language Models Without Supervision (CCS)",
+          "authors": "Burns, Haas, Khoja, Gatti, Steinhardt",
+          "year": 2022,
+          "type": "paper",
+          "url": "https://arxiv.org/abs/2212.03827",
+          "cited_in": ["Reading tab (Resources)"],
+          "notes": "Contrastive consistency search — unsupervised direction of truth in hidden states."
+        }
+      ]
+    },
+    {
+      "id": "threat-adversarial",
+      "label": "Threat models & adversarial ML",
+      "entries": [
+        {
+          "title": "MITRE ATLAS",
+          "authors": "MITRE",
+          "year": 2024,
+          "type": "web",
+          "url": "https://atlas.mitre.org",
+          "cited_in": ["Privacy First, Threat-Aware, Still Just Math (site)"],
+          "notes": "Tactics and techniques for adversarial machine learning — paired with OWASP LLM and NIST AI RMF in public-facing legal/research copy."
+        },
+        {
+          "title": "OWASP Top 10 for Large Language Model Applications",
+          "authors": "OWASP",
+          "year": 2025,
+          "type": "standard",
+          "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+          "cited_in": ["Privacy First, Threat-Aware, Still Just Math (site)"],
+          "notes": "Prompt injection, sensitive data exposure, insecure plugins — evaluation alignment for threat-aware local inference narrative."
+        }
+      ]
+    },
+    {
+      "id": "privacy-edge",
+      "label": "Privacy, edge & infrastructure",
+      "entries": [
+        {
+          "title": "Docker & Cloudflare Zero Trust (lab scaffold)",
+          "authors": "Obversary internal draft",
+          "year": 2026,
+          "type": "report",
+          "url": "https://github.com/architectfromthefuture",
+          "cited_in": ["01_docker_zerotrust_privacy_inference (architect hub)", "Privacy First article"],
+          "notes": "Local inference, tunnels, no public IP — companion to public site privacy/legal pages.",
+          "iteration": "Long-form scaffold lives under lab papers; site summarizes."
+        }
+      ]
+    },
+    {
+      "id": "linguistics-learning",
+      "label": "Linguistics & usage-based learning",
+      "entries": [
+        {
+          "title": "Constructing a Language: A Usage-Based Theory of Language Acquisition",
+          "authors": "Michael Tomasello",
+          "year": 2003,
+          "type": "book",
+          "url": "https://www.hup.harvard.edu/catalog.php?isbn=9780674018313",
+          "cited_in": ["05_privacy_first_productivity_and_pattern.md", "Memory as Prior Routes (research card)"],
+          "notes": "Usage-based acquisition — parallel (not identical) to statistical learning in models; cited for pattern-from-environment vs innate language module framing."
+        },
+        {
+          "title": "Developmental linguistics — staged acquisition",
+          "authors": "Various (field overview)",
+          "year": "n.d.",
+          "type": "thesis",
+          "cited_in": ["The Same Problem at Every Scale", "Memory as Prior Routes"],
+          "notes": "Staged constraints as inductive biases — bridge to PPO-style proximal constraints and signal-gated routing in Obversary narrative."
+        }
+      ]
+    }
+  ]
+}

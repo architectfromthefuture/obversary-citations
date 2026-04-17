@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://obversarystudios.org/citations.schema.json",
+  "title": "Obversary citations catalog",
+  "type": "object",
+  "required": ["version", "updated", "categories"],
+  "properties": {
+    "version": { "type": "integer" },
+    "updated": { "type": "string", "description": "ISO date YYYY-MM-DD" },
+    "source_repo": { "type": "string", "format": "uri" },
+    "categories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "label", "entries"],
+        "properties": {
+          "id": { "type": "string" },
+          "label": { "type": "string" },
+          "entries": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["title"],
+              "properties": {
+                "title": { "type": "string" },
+                "authors": { "type": "string" },
+                "year": { "type": ["string", "integer"] },
+                "type": {
+                  "type": "string",
+                  "enum": ["paper", "framework", "standard", "book", "web", "report", "thesis"]
+                },
+                "url": { "type": "string", "format": "uri" },
+                "doi": { "type": "string" },
+                "cited_in": {
+                  "type": "array",
+                  "items": { "type": "string" },
+                  "description": "Obversary papers, articles, or repos where this is cited"
+                },
+                "notes": { "type": "string" },
+                "iteration": {
+                  "type": "string",
+                  "description": "Optional revision / tracking note for your own iterations"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
