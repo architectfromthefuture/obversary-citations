@@ -1,6 +1,13 @@
 # obversary-citations
 
-Public, versioned catalog of **sources cited in Obversary Studios work** — papers, frameworks, standards, and internal iteration notes. Consumed by [obversarystudios.org](https://obversarystudios.org) Resources → **Literature** tab (`/data/citations.json`).
+**Role:** a **bibliography file** the website loads — not the main story. The **narrative** lives on [obversarystudios.org](https://obversarystudios.org) (Resources → **Literature** uses `/data/citations.json` after sync). Keep this repo focused on **metadata + your notes**; do not re-explain the full systems architecture here (link the site if needed).
+
+Versioned catalog of **sources cited in Obversary Studios work** — papers, frameworks, standards, and internal iteration notes.
+
+## Honest scope (short)
+
+- **This repo is not** the research paper, product spec, or eval report — it’s a **citation catalog** and sync source for the public site.
+- **Verified** = your JSON rows + URLs you checked; “polished README” does not add evidence.
 
 ## Files
 
